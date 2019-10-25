@@ -1,0 +1,34 @@
+<head>
+  <title>CalC</title>
+  <link rel="shortcut icon" type="image/x-icon" href="Calculator_30001.png" />
+</head>
+<body style="background-color:powderblue;text-align:center" >
+<h1>Simple Calculator</h1>
+<%= form_tag "/sum" do %>
+  <%= text_field_tag :number1 %>
+  <%= text_field_tag :number2 %>
+  <%= submit_tag "+" %>
+<% end %>
+<%= form_tag "/subtract" do %>
+  <%= text_field_tag :number1 %>
+  <%= text_field_tag :number2 %>
+  <%= submit_tag "-" %>
+<% end %>
+<%= form_tag "/multiply" do %>
+  <%= text_field_tag :number1 %>
+  <%= text_field_tag :number2 %>
+  <%= submit_tag "*" %>
+<% end %>
+<%= form_tag "/divide" do %>
+  <%= text_field_tag :number1 %>
+  <%= text_field_tag :number2 %>
+  <%= submit_tag "/" %>
+<% end %>
+<h1>Or</h1>
+<h2>Enter 2 numbers to perform all basic operations</h2>
+<%= form_tag "/result" do %>
+  <%= text_field_tag :number1 %>
+  <%= text_field_tag :number2 %>
+  <%= submit_tag "Calculate" %>
+<% end %>
+</body>
