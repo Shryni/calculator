@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-git_source(:github) { |repo| "https://github.com/#{repo}.git" }
+git_source(:github) { |repo| "https://github.com/Shryni/calculator.git" }
 
 ruby '2.6.3'
 
@@ -58,6 +58,6 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 group :production do
   gem 'pg'
-  gem 'rails_12factor'
+  # gem 'rails_12factor'
 end
 
